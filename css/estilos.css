@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500;700&display=swap');
+
+*{box-sizing: border-box;
+    font-family:'Kanit', sans-serif;
+    padding: 0%;
+    margin: 0%
+
+;}
+
+.header { display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #181f22;  
+    margin: 0px;;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #4090af
+    
+    
+}
+
+.imagen__imagen{
+    box-sizing: border-box;
+    position: absolute;
+    top: 8%;
+   
+}
+
+.header__h1{color: #181f22;
+    font-size: 45px;
+    position: absolute;
+    left: 40%;
+    bottom: 80%;
+
+}
+
+
+.header__slogan{
+    display: block;
+    color: #181f22;
+    font-size: 14px;
+    position: absolute;
+    left: 42%;
+    bottom: 77%;
+
+}
+
+.header__nav { background-color: black;
+    /*flex-direction: column;*/
+    
+
+}    
+
+.nav__ul{
+    
+    position: absolute; 
+    bottom: 93%;
+    left: 65%;
+    font-size: 16px;
+    /*padding: 15px;*/
+  gap: 15px;
+    list-style-type: none;
+    
+}
+
+.ul__li{
+    display: inline-block;
+    margin: 3px;
+}
+
+.ul__li a{ color: #181f22;
+    text-decoration: none;
+    }
+
+    .li.active{ text-decoration: underline;
+
+    }
+
+.ul__li a:hover{
+        text-decoration: underline;
+        
+    }
+        
+
+
+
+#index__main { position: relative;
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+color:black;   
+/*padding: 220px 270px 350px 270px;*/
+}    
+
+.main__p1{
+    max-width: 50%;
+    max-height: 60%;
+}
+
+.main__maps{
+    position: relative;
+    left: 36px;
+    border: black;
+    max-width: 55%;
+    
+}
+
+#index__section1{ position: relative;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+color:black;   
+
+}
+
+.section1__aside1{
+    max-width: 60%;
+    max-height: 50%;
+}
+
+
+.aside1__img1{
+    background-color: blue;
+    display: inline-block;
+    
+    
+}
+
+.enlaces{
+    
+    padding: 100px;
+}
+
+
+#footer{ color: #181f22;
+    padding: 10px 100px 50px 100px;
+    background-color: #4090af;
+   
+    
+}
+
+.pie{
+    color: #181f22;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer1{position: absolute;
+    left: 1%;
+    
+padding: 5px;
+}
+
+.footer2{
+    position: absolute;
+    right: 1%;
+    
+    padding: 5px;
+
+}
+
+.footer3{
+    position: absolute;
+    left: 40%;
+    
+    padding: 5px;
+
+}
+
+
+#section2{padding: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#sectiongal{
+    
+    padding: 120px;
+}
+
+.article1gal{ display: flex;
+    
+    color: black;
+}
+
+.article2gal{
+padding: 5px;
+}
+
+.galeria{padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articlequienes{
+    color: black;
+}
