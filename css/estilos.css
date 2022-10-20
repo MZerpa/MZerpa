@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    color: #181f22;  
+     
     margin: 0px;;
     padding: 80px;
     box-sizing: border-box;
@@ -35,17 +35,18 @@
 
 .imagen__header{
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     top: 8%;
-    left: 15%;
+    left: 8%;
    
 }
 
 .header__h1{color: #181f22;
     font-size: 45px;
-    position: absolute;
-    left: 40%;
-    bottom: 80%;
+    position: relative;
+    top: 8%;
+    left: 34%;
+    
 
 }
 
@@ -54,14 +55,14 @@
     display: block;
     color: #181f22;
     font-size: 14px;
-    position: absolute;
-    left: 42%;
-    bottom: 77%;
+    position: relative;
+    top: 70%;
+    left: 16.5%;
 
 }
 
 
-.header__nav { background-color: black;
+.header__nav { 
     flex-wrap: nowrap;
     /*flex-direction: column;*/
     
@@ -70,9 +71,9 @@
 
 .nav__ul{
     
-    position: absolute; 
-    bottom: 90%;
-    left: 61%;
+    position: relative; 
+    bottom: 80%;
+    left: 57%;
     font-size: 16px;
     /*padding: 15px;*/
   gap: 15px;
@@ -124,11 +125,7 @@
 
 .main__maps{
     position: absolute;
-    margin: 5px 5px 5px 5px;
-    left: 20px;
-    top: 1px;
-    border: black;
-    max-width: 85%;
+    margin: 10px
     
 }
 
@@ -198,13 +195,13 @@ color:black;
 
 }
 
-.footer1{position: relative;
+.footer{position: relative;
     left: 1%;
     
 padding: 5px;
 }
 
-.footer2{
+.footer{
     position: relative;
     right: 1%;
     
@@ -212,7 +209,7 @@ padding: 5px;
 
 }
 
-.footer3{
+.footer{
     position: relative;
     left: 1%;
     
@@ -221,7 +218,7 @@ padding: 5px;
 }
 
 
-#quienessomos__section{padding: 150px;
+#quienessomos__section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,7 +227,8 @@ padding: 5px;
 
 .section2__article1{
     color: black;
-    margin: 30px;
+    padding: 100px;
+    margin: 50px;
 }
 
 #section__gal{
@@ -254,39 +252,98 @@ padding: 5px;
 }
 
 
-/* TAMAÑO TABLET 768PX */
 
-@media screen and (min-width: 320px){
+
+@media screen and (max-width: 480px){
+
+    #body{margin: 0%;
+    height: auto;
+    width: auto;
+    padding: auto;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 0.2fr 1fr 0.1fr ;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    }  
+    
+    .header{ grid-area: header;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
 
 .header__h1{position: relative;
     text-align: center;
-    top: 45px;
-    left: 95px;
+    top: 0px;
+    left: 25px;
     font-size: 25px;
-}
+grid-area: header;}
 
 .header__slogan{
-    font-size: 15px;
-    top: 155px;
+    display: none;
 }
 
 .header__nav{
-
+    position: relative;
 
 }
 
-.nav__ul{
+.imagen__header{
+    display: none;
+}
+
+.nav__ul{position: relative;
+    top: 1%;
+    left: 5%;
+   
+}
+
+.ul__li{display: flex;
+    flex-direction: row;
+    margin: 15px;
+    position: relative;
+    bottom: 50%;
+    left: 35%;
+   
+}
+
+#main__index1{padding: 0px;
+    grid-area: main;
+    position: relative;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    color:black;  
+
+}
+
+#footer{ position: relative; 
+    grid-area: footer; 
+    color: #181f22;
+    padding: 10px 100px 10px 100px;
+    background-color: #4090af;
+    
     
 }
 
-    .pie{
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
+.pie{
+    color: #181f22;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
+}
 
-    
-    
-    }
+.footer{
+    margin: 15px;
+}
+  }
     
