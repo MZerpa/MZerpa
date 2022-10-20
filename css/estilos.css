@@ -7,8 +7,8 @@
 
 ;}
 
-
-#body{
+ 
+#body{margin: 0%;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 0.4fr 1fr 0.1fr ;
@@ -16,7 +16,7 @@
     "header"
     "main"
     "footer"
-}
+}  
 
 .header { grid-area: header; 
     display: flex;
@@ -24,18 +24,20 @@
     flex-wrap: wrap;
     color: #181f22;  
     margin: 0px;;
-    padding: 55px;
+    padding: 80px;
     box-sizing: border-box;
     background-color: #4090af
-    
+
     
     
 }
 
-.imagen__imagen{
+
+.imagen__header{
     box-sizing: border-box;
     position: absolute;
     top: 8%;
+    left: 15%;
    
 }
 
@@ -58,7 +60,9 @@
 
 }
 
+
 .header__nav { background-color: black;
+    flex-wrap: nowrap;
     /*flex-direction: column;*/
     
 
@@ -67,8 +71,8 @@
 .nav__ul{
     
     position: absolute; 
-    bottom: 93%;
-    left: 65%;
+    bottom: 90%;
+    left: 61%;
     font-size: 16px;
     /*padding: 15px;*/
   gap: 15px;
@@ -92,31 +96,39 @@
 .ul__li a:hover{
         text-decoration: underline;
         
-    }
-        
+}
+
+
 
 
 
 #index__main { grid-area: main;
     position: relative;
      display: flex;
+     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-color:black;   
-/*padding: 220px 270px 350px 270px;*/
-}    
+    color:black;  
 
-.main__p1{
+ 
+
+  }
+
+      
+
+.main__p1{text-align: center;
     max-width: 50%;
     max-height: 60%;
 }
 
 .main__maps{
-    position: relative;
-    left: 36px;
+    position: absolute;
+    margin: 5px 5px 5px 5px;
+    left: 20px;
+    top: 1px;
     border: black;
-    max-width: 55%;
+    max-width: 85%;
     
 }
 
@@ -155,7 +167,8 @@ color:black;
 
 #contacto__section{
     display: flex;
-    flex-wrap: wrap;
+    
+    
     justify-content: space-between;
     align-items: center;
     
@@ -167,11 +180,12 @@ color:black;
 }
 
 
-#footer{ grid-area: footer; 
+#footer{ position: relative; 
+    grid-area: footer; 
     color: #181f22;
-    padding: 10px 100px 50px 100px;
+    padding: 10px 100px 10px 100px;
     background-color: #4090af;
-   
+    
     
 }
 
@@ -179,18 +193,19 @@ color:black;
     color: #181f22;
     font-size: 15px;
     display: flex;
+    
     justify-content: space-between;
 
 }
 
-.footer1{position: absolute;
+.footer1{position: relative;
     left: 1%;
     
 padding: 5px;
 }
 
 .footer2{
-    position: absolute;
+    position: relative;
     right: 1%;
     
     padding: 5px;
@@ -198,15 +213,15 @@ padding: 5px;
 }
 
 .footer3{
-    position: absolute;
-    left: 40%;
+    position: relative;
+    left: 1%;
     
     padding: 5px;
 
 }
 
 
-#quienessomos__section{padding: 120px;
+#quienessomos__section{padding: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,7 +256,37 @@ padding: 5px;
 
 /* TAMAÑO TABLET 768PX */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 320px){
+
+.header__h1{position: relative;
+    text-align: center;
+    top: 45px;
+    left: 95px;
+    font-size: 25px;
+}
+
+.header__slogan{
+    font-size: 15px;
+    top: 155px;
+}
+
+.header__nav{
+
+
+}
+
+.nav__ul{
+    
+}
+
+    .pie{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
     
     }
     
