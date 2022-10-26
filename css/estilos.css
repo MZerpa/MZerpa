@@ -3,9 +3,8 @@
 *{box-sizing: border-box;
     font-family:'Kanit', sans-serif;
     padding: 0%;
-    margin: 0%
-
-;}
+    margin: 0%;
+}
 
  
 #body{margin: 0%;
@@ -18,74 +17,62 @@
     "footer"
 }  
 
-.header { grid-area: header; 
+.header {grid-area: header; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
      
-    margin: 0px;;
+    margin: 0px;
     padding: 80px;
     box-sizing: border-box;
-    background-color: #4090af
-
-    
-    
+    background-color: #4090af;
 }
 
 
 .imagen__header{
     box-sizing: border-box;
-    position: relative;
+    /*position: relative;
     top: 8%;
-    left: 8%;
-   
-}
+    left: 8%;*/
+   }
 
 .header__h1{color: #181f22;
     font-size: 45px;
-    position: relative;
+    /*position: relative;
     top: 8%;
-    left: 34%;
+    left: 34%;*/
     height: 100px;
-    transition: 1s
- }
+    transition: 1s;
+}
 
 .header__h1:hover{font-size: 48px;
    color: #181f22;
    opacity: 1;
 }   
 
-
-
 .header__slogan{
     display: block;
     color: #181f22;
     font-size: 14px;
-    position: relative;
+    /*position: relative;
     top: 70%;
-    left: 16.5%;
-
+    left: 16.5%;*/
 }
 
 
 .header__nav { 
     flex-wrap: nowrap;
     /*flex-direction: column;*/
-    
+    }    
 
-}    
-
-.nav__ul{
-    
-    position: relative; 
+.nav__ul{/*position: relative; 
     bottom: 70%;
-    left: 57%;
+    left: 57%;*/
     font-size: 16px;
     /*padding: 15px;*/
   gap: 15px;
     list-style-type: none;
-    
-}
+    }
 
 .ul__li{
     display: inline-block;
@@ -110,19 +97,14 @@
 
 
 #index__main { grid-area: main;
-    position: relative;
+    
      display: flex;
      flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     color:black;  
-
- 
-
-  }
-
-      
+}
 
 .main__p1{text-align: center;
     max-width: 50%;
@@ -130,18 +112,16 @@
 }
 
 .main__maps{
-    position: absolute;
-    margin: 10px
     
-}
+    margin: 10px;
+    }
 
-#index__section1{ position: relative;
+#index__section1{ 
     display: flex;
    justify-content: space-around;
    align-items: center;
    flex-direction: row;
 color:black;   
-
 }
 
 #biografiaehistoria{ margin: 150px;
@@ -151,8 +131,6 @@ color:black;
    align-items: center;
    flex-direction: row;
 color:black;   
-
-
 }
 
 .section1__aside1{
@@ -164,17 +142,12 @@ color:black;
 .aside1__img1{
     background-color: blue;
     display: inline-block;
-    
-    
 }
 
 #contacto__section{
     display: flex;
-    
-    
     justify-content: space-between;
     align-items: center;
-    
     padding: 100px;
 }
 
@@ -183,46 +156,33 @@ color:black;
 }
 
 
-#footer{ position: relative; 
+#footer{ 
     grid-area: footer; 
     color: #181f22;
     padding: 10px 100px 10px 100px;
     background-color: #4090af;
-    
-    
-}
+    }
 
 .pie{
     color: #181f22;
     font-size: 15px;
     display: flex;
-    
-    
     justify-content: space-between;
-
 }
 
-.footer{position: relative;
-    left: 1%;
-    
+.footer{
 padding: 5px;
 transition: 1s;
 }
 
 .footer{
-    position: relative;
-    right: 1%;
     
     padding: 5px;
-
 }
 
 .footer{
-    position: relative;
-    left: 1%;
-    
+   
     padding: 5px;
-
 }
 
 .footer:hover{
@@ -244,13 +204,11 @@ transition: 1s;
     margin: 50px;
 }
 
-#section__gal{
-    
+#section__gal{    
     padding: 120px;
 }
 
 .gal__article1{ display: flex;
-    
     color: black;
 }
 
@@ -287,7 +245,6 @@ padding: 5px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-       
     }
 
 .header__h1{position: relative;
@@ -313,7 +270,6 @@ grid-area: header;}
 .nav__ul{position: relative;
     top: 1%;
     left: 5%;
-   
 }
 
 .ul__li{display: flex;
@@ -322,7 +278,6 @@ grid-area: header;}
     position: relative;
     bottom: 50%;
     left: 35%;
-   
 }
 
 #main__index1{padding: 0px;
@@ -334,16 +289,13 @@ grid-area: header;}
     align-items: flex-start;
     flex-direction: row;
     color:black;  
-
 }
 
 #footer{ position: relative; 
     grid-area: footer; 
     color: #181f22;
     padding: 10px 100px 10px 100px;
-    background-color: #4090af;
-    
-    
+    background-color: #4090af;  
 }
 
 .pie{
