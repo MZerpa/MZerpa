@@ -31,16 +31,16 @@
 
 .imagen__header{
     box-sizing: border-box;
-    /*position: relative;
+    position: relative;
     top: 8%;
-    left: 8%;*/
+    left: 8%;
    }
 
 .header__h1{color: #181f22;
     font-size: 45px;
-    /*position: relative;
+    position: relative;
     top: 8%;
-    left: 34%;*/
+    left: 34%;
     height: 100px;
     transition: 1s;
 }
@@ -54,9 +54,9 @@
     display: block;
     color: #181f22;
     font-size: 14px;
-    /*position: relative;
+    position: relative;
     top: 70%;
-    left: 16.5%;*/
+    left: 16.5%;
 }
 
 
@@ -65,11 +65,11 @@
     /*flex-direction: column;*/
     }    
 
-.nav__ul{/*position: relative; 
+.nav__ul{position: relative; 
     bottom: 70%;
-    left: 57%;*/
+    left: 57%;
     font-size: 16px;
-    /*padding: 15px;*/
+    
   gap: 15px;
     list-style-type: none;
     }
