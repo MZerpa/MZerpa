@@ -1,6 +1,199 @@
+#quienessomos__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #quienessomos__section .section2__article1 {
+    color: black;
+    padding: 100px;
+    margin: 50px; }
+
+#section__gal {
+  padding: 120px; }
+  #section__gal .gal__article1 {
+    display: flex;
+    color: black; }
+  #section__gal .gal__article2 {
+    padding: 5px; }
+  #section__gal .article__galeria {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+#contacto__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px; }
+  #contacto__section .section__enlaces {
+    margin: 40px; }
+
+#biografiaehistoria {
+  margin: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black; }
+
+@media screen and (max-width: 480px) {
+  #body {
+    margin: 0%;
+    height: auto;
+    width: auto;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-areas: "header" "main" "footer"; }
+  .header {
+    grid-area: header;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .header__h1 {
+    position: relative;
+    text-align: center;
+    top: 0px;
+    left: 25px;
+    font-size: 25px;
+    grid-area: header; }
+  .header__slogan {
+    display: none; }
+  .header__nav {
+    position: relative; }
+  .imagen__header {
+    display: none; }
+  .nav__ul {
+    position: relative;
+    top: 1%;
+    left: 5%; }
+  .ul__li {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    position: relative;
+    bottom: 50%;
+    left: 35%; }
+  #main__index1 {
+    padding: 0px;
+    grid-area: main;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    color: black; }
+  .main__maps {
+    height: auto;
+    width: auto; }
+  #footer {
+    position: relative;
+    grid-area: footer;
+    color: #181f22;
+    padding: 10px 100px 10px 100px;
+    background-color: #4090af; }
+  .pie {
+    color: #181f22;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .footer {
+    margin: 15px; } }
+
 #body {
   margin: 0%;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 0.4fr 1fr 0.1fr;
   grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 80px;
+  box-sizing: border-box;
+  background-color: #4090af; }
+  .header .imagen__header {
+    box-sizing: border-box;
+    position: relative;
+    top: 8%;
+    left: 8%; }
+  .header .header__h1 {
+    color: #181f22;
+    font-size: 45px;
+    position: relative;
+    top: 8%;
+    left: 34%;
+    height: 100px;
+    transition: 1s; }
+  .header:hover {
+    font-size: 48px;
+    color: #181f22;
+    opacity: 1; }
+  .header .header__slogan {
+    display: block;
+    color: #181f22;
+    font-size: 14px;
+    position: relative;
+    top: 55px;
+    left: 16.5%; }
+  .header .header__nav {
+    flex-wrap: nowrap; }
+    .header .header__nav .nav__ul {
+      position: relative;
+      bottom: 70%;
+      left: 54%;
+      font-size: 16px;
+      gap: 15px;
+      list-style-type: none; }
+      .header .header__nav .nav__ul .ul__li {
+        display: inline-block;
+        margin: 3px; }
+      .header .header__nav .nav__ul .ul__li a {
+        color: #181f22;
+        text-decoration: none; }
+      .header .header__nav .nav__ul .li.active {
+        text-decoration: underline; }
+      .header .header__nav .nav__ul .ul__li a:hover {
+        text-decoration: underline; }
+
+#index__main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  color: black; }
+  #index__main .main__p1 {
+    text-align: center;
+    max-width: 50%;
+    max-height: 60%; }
+  #index__main .main__maps {
+    margin: 10px; }
+
+#footer {
+  grid-area: footer;
+  color: #181f22;
+  padding: 10px 100px 10px 100px;
+  background-color: #4090af; }
+  #footer .pie {
+    color: #181f22;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between; }
+    #footer .pie .footer {
+      padding: 5px;
+      transition: 1s; }
+    #footer .pie:hover {
+      text-decoration: underline;
+      font-size: 18px; }

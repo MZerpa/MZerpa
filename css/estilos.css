@@ -17,6 +17,12 @@
     "footer"
 }  
 
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+
+
 .header {grid-area: header; 
     display: flex;
     flex-direction: row;
@@ -69,8 +75,7 @@
     bottom: 70%;
     left: 54%;
     font-size: 16px;
-    
-  gap: 15px;
+    gap: 15px;
     list-style-type: none;
     }
 
@@ -92,12 +97,13 @@
         
 }
 
-
-
-
+.h3{
+    display: flex;
+    align-items: center;
+}
 
 #index__main { grid-area: main;
-    
+    padding: 32px;
      display: flex;
      flex-wrap: wrap;
     justify-content: space-around;
@@ -112,7 +118,6 @@
 }
 
 .main__maps{
-    
     margin: 10px;
     }
 
@@ -124,7 +129,8 @@
 color:black;   
 }
 
-#biografiaehistoria{ margin: 150px;
+#biografiaehistoria{ margin: 40px;
+    padding: 55px;
     position: relative;
     display: flex;
    justify-content: space-around;
@@ -149,10 +155,11 @@ color:black;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 32px;
 }
 
 .section__enlaces{
+    
     margin: 40px;
 }
 
@@ -191,22 +198,27 @@ transition: 1s;
     font-size: 18px;
 }
 
-
 #quienessomos__section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
+    justify-content: space-around;
+    }
+   
+.h3quienes{
+    margin: 25px 0px 0px 0px;
+}    
 
-.section2__article1{
+
+.section2__article1{display: flex;
+    flex-direction: row;
     color: black;
-    padding: 100px;
-    margin: 50px;
+    padding: 32px;
+    margin: 25px;
 }
 
 #section__gal{    
-    padding: 120px;
+    padding: 35px;
 }
 
 .gal__article1{ display: flex;
@@ -214,7 +226,7 @@ transition: 1s;
 }
 
 .gal__article2{
-padding: 5px;
+padding: px;
 }
 
 .article__galeria{padding: 10px;
@@ -223,11 +235,17 @@ padding: 5px;
     justify-content: space-between;
 }
 
+.imagenes{
+    margin: 5px;
+}
 
 
 
 @media screen and (max-width: 480px){
-
+*{
+    margin: 0px;
+    margin: 0px;
+}
     #body{margin: 0%;
     height: auto;
     width: auto;
@@ -240,9 +258,9 @@ padding: 5px;
         "main"
         "footer"
     }  
-    
+
     .header{ grid-area: header;
-        padding: auto;
+        padding: 32px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -261,8 +279,19 @@ grid-area: header;}
 
 .header__nav{
     position: relative;
-
+    margin: 0px;
 }
+
+.nav__ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ul__li a{ 
+    margin: 0px;
+     }
+
 
 .imagen__header{
     display: none;
@@ -275,13 +304,15 @@ grid-area: header;}
 
 .ul__li{display: flex;
     flex-direction: row;
-    margin: 15px;
-    position: relative;
+    padding: 0px;
+    margin: 5px;
+    /*position: relative;
     bottom: 50%;
-    left: 35%;
+    left: 35%;*/
 }
 
-#main__index1{padding: 0px;
+#index__main{padding: 0px;
+    margin: 0px;
     grid-area: main;
     position: relative;
      display: flex;
@@ -292,9 +323,26 @@ grid-area: header;}
     color:black;  
 }
 
-.main__maps{
-    height: auto;
-    width: auto;
+.main__maps{height: 10px;
+    width: 10px;}
+
+#contacto__section{
+    padding: 32px;
+}    
+
+#quienessomos__section{
+    padding: 0px;
+    margin: 0px;
+}
+
+.section2__article1{display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+#section__gal{
+    padding: 0px;
+    margin: 15px;
 }
 
 #footer{ position: relative; 

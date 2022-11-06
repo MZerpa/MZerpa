@@ -1,0 +1,11 @@
+#contacto__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+
+    .section__enlaces{
+        margin: 40px;
+    }
+}

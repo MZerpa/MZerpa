@@ -1,0 +1,17 @@
+#section__gal{    
+    padding: 120px;
+
+    .gal__article1{ display: flex;
+        color: black;
+    }
+    
+    .gal__article2{
+    padding: 5px;
+    }
+    
+    .article__galeria{padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
