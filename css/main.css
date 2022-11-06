@@ -168,12 +168,12 @@
 
 #index__main {
   grid-area: main;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
-  color: black; }
+  flex-direction: row; }
   #index__main .main__p1 {
     text-align: center;
     max-width: 50%;
@@ -187,10 +187,10 @@
   padding: 10px 100px 10px 100px;
   background-color: #4090af; }
   #footer .pie {
-    color: #181f22;
-    font-size: 15px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: #181f22;
+    font-size: 15px; }
     #footer .pie .footer {
       padding: 5px;
       transition: 1s; }

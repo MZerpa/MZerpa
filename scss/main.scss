@@ -4,8 +4,23 @@
 @import "biografiaehistoria";
 @import "mediascreen";
 
+@mixin flex-spacebet {display: flex;
+    justify-content: space-between;
+    }
 
-#body{margin: 0%;
+@mixin flex-wrap-around-center-row {display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+    
+}    
+
+$colorheader:#4090af;
+$colorfooter:#4090af;
+
+
+#body {margin: 0%;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 0.4fr 1fr 0.1fr ;
@@ -23,7 +38,7 @@
     margin: 0px;
     padding: 80px;
     box-sizing: border-box;
-    background-color: #4090af;
+    background-color: $colorheader;
 
     .imagen__header{
         box-sizing: border-box;
@@ -86,14 +101,8 @@
   }
 
 #index__main { grid-area: main;
-    
-    display: flex;
-    flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: center;
-   flex-direction: row;
    color:black;  
-
+   @include flex-wrap-around-center-row;
    .main__p1{text-align: center;
     max-width: 50%;
     max-height: 60%;
@@ -109,13 +118,12 @@
     grid-area: footer; 
     color: #181f22;
     padding: 10px 100px 10px 100px;
-    background-color: #4090af;
+    background-color: $colorfooter;
 
     .pie{
+        @include flex-spacebet;
         color: #181f22;
         font-size: 15px;
-        display: flex;
-        justify-content: space-between;
         .footer{
             padding: 5px;
             transition: 1s;
