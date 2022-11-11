@@ -139,6 +139,24 @@ color:black;
 color:black;   
 }
 
+#biografiaehistoria:hover{ background-color: #00ff91;
+    opacity: 25;
+    transition: 2s;
+    border-radius: 25%;
+}
+
+.historia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phistoria{
+    margin: 15px;
+}
+
 .section1__aside1{
     max-width: 60%;
     max-height: 50%;
@@ -159,7 +177,6 @@ color:black;
 }
 
 .section__enlaces{
-    
     margin: 40px;
 }
 
@@ -323,8 +340,21 @@ grid-area: header;}
     color:black;  
 }
 
-.main__maps{height: 10px;
-    width: 10px;}
+.containermap{width: 315px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.map__map{
+    position: none;
+}
+
+#biografiaehistoria:hover{ background-color: none;
+    opacity: none;
+    transition: none;
+    border-radius: none;
+}
 
 #contacto__section{
     padding: 32px;
